@@ -1,0 +1,38 @@
+{
+  "name": "mern-assignment",
+  "version": "1.0.0",
+  "description": "freeCodeCamp Clone",
+  "main": "server.js",
+  "scripts": {
+    "start": "babel-node backend/server.js",
+    "dev": "nodemon --exec babel-node backend/server.js",
+    "client": "npm start --prefix frontend",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "author": "Pranay Kharabe",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "googleapis": "^102.0.0",
+    "helmet": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.15",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}

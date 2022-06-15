@@ -1,0 +1,9 @@
+.quote{
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    margin:50px 80px 40px 80px;
+}
+
+.quote-line {
+    line-height: 1.4;
+}
